@@ -1,13 +1,6 @@
 <template>
-    <div class="app">
-        <div class="information">
-            <h3>title</h3>
-        </div>
-        <Title msg="start"/>
-        <div class="bottem">
+    <Title />
 
-        </div>
-    </div>
 </template>
 
 <script>
@@ -22,23 +15,24 @@ export default {
 </script>
 
 <style>
-.app {
-    display: flow;
-    height: 100%;
-    background-image: url('./assets/img.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.9;
-}
+/*#app {*/
+/*    display: flow;*/
+/*    height: 100%;*/
+/*    background-image: url('./assets/img.png');*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    opacity: 0.9;*/
+/*}*/
 
-.information{
-    background-color: #42b983;
-    color: white;
-    text-align: center;
+/*.information{*/
+/*    background-color: #42b983;*/
+/*    color: white;*/
+/*    text-align: center;*/
+
+/*}*/
+/*.bottem{*/
+/*    height: 100px;*/
+/*}
 
 }
-.bottem{
-    height: 100px;
-}
-
 </style>

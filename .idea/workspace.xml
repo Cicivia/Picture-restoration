@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166165c2-b90e-4266-a8c8-08a4e6a13669" name="更改" comment="web工程目录">
+    <list default="true" id="166165c2-b90e-4266-a8c8-08a4e6a13669" name="更改" comment="初步页面设计">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/src/components/Title.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/src/components/Title.vue" afterDir="false" />
     </list>
@@ -48,6 +53,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/temp0/package.json" />
+  </component>
   <component name="ProjectId" id="2Y7MQhofngEteAgQsU1QZLZla9a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -62,7 +70,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/IDEA/.IntelliJIdea/GoChat",
+    "last_opened_file_path": "D:/IDEA/.IntelliJIdea/Picture-restoration",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,7 +106,10 @@
       <workItem from="1699874940701" duration="1378000" />
       <workItem from="1699876440013" duration="380000" />
       <workItem from="1699877611032" duration="899000" />
-      <workItem from="1700224603231" duration="30938000" />
+      <workItem from="1700224603231" duration="39538000" />
+      <workItem from="1701142304604" duration="764000" />
+      <workItem from="1701143090570" duration="36000" />
+      <workItem from="1701173692452" duration="19684000" />
     </task>
     <task id="LOCAL-00001" summary="web工程目录">
       <created>1699874166800</created>
@@ -135,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700224818460</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="初步页面设计">
+      <created>1700729569832</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700729569832</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +187,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="web工程目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="web工程目录" />
+    <MESSAGE value="初步页面设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="初步页面设计" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
