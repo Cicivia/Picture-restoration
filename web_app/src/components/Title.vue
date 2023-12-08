@@ -38,7 +38,9 @@
                                         <img :src="repairedImage" class="image-preview" />
                                     </label>
                                 </div>
-                                <button class="btn">下载修复后的图片</button>
+                                <button class="btn">
+                                    <a :href="repairedImage" download="repaired-image.jpg">下载图片</a>
+                                </button>
                             </div>
                         </el-col>
                     </el-row>
@@ -83,10 +85,14 @@ export default {
             const formData = new FormData();
             formData.append('image', this.selectedFile);
             axios
-                .post('http://upload', formData)
-                .then((response) => {
-                    console.log('Image uploaded successfully:', response.data);
-                    this.repairedImage=response.data.url;
+                .post('http://127.0.0.1:5000/upload', formData,{responseType:'blob'})
+                .then((response) =>{
+                    console.log('Image uploaded successfully:');
+
+                    const imageUrl = window.URL.createObjectURL(new Blob([response.data],{type:'image/png'}))
+                    this.repairedImage = imageUrl;
+                    console.log(imageUrl);
+
                 })
                 .catch((error) => {
                     console.error('Error uploading image:', error);
@@ -107,7 +113,7 @@ export default {
 <style >
 .container{
     height: 100vh;
-    background-color: #633fff;
+    background-color:#42b983;
     display: flex;
     flex-direction: column;
     justify-content: center; /* 水平居中 */
@@ -116,11 +122,11 @@ export default {
 .title {
     font-size: 7rem;
     padding: 3rem 3rem;
-    background-color:#ffe888;
+    background-color:white;
     border: none;
     border-radius: 75px;
     margin-bottom: 1rem;
-    color: #633fff;
+    color: #42b983;
 }
 
 .description {
@@ -128,12 +134,12 @@ export default {
     margin-top: 5rem;
     font-style: oblique;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffe888;
+    color: white;
 }
 
 .el-header{
-    background-color: #ffe888;
-    color: #633fff;
+    background-color: white;
+    color: #42b983;
     text-align: center;
     font-size: 2rem;
     line-height: 60px;
@@ -154,8 +160,8 @@ export default {
 }
 
 .el-footer {
-    background-color: #ffe888;
-    color: #633fff;
+    background-color: white;
+    color: #42b983;
     text-align: center;
     line-height: 60px;
 }
@@ -168,7 +174,7 @@ export default {
 }
 
 .bg-purple {
-    background: #ffe888 ;
+    background: white ;
     margin-top: 50px;
 }
 .grid-content {
@@ -181,10 +187,10 @@ export default {
 .btn{
     font-size: 1.5rem;
     padding: 1rem 1rem;
-    background-color: #ffe888;
+    background-color: white;
     border: none;
     border-radius: 10px;
-    color: #633fff;
+    color: #42b983;
 }
 .image-preview {
     display: inline-block;

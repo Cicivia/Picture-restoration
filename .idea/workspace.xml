@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="166165c2-b90e-4266-a8c8-08a4e6a13669" name="更改" comment="初步页面设计">
+    <list default="true" id="166165c2-b90e-4266-a8c8-08a4e6a13669" name="更改" comment="页面修改逻辑整合">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_app/src/components/Title.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web_app/src/components/Title.vue" afterDir="false" />
     </list>
@@ -23,6 +20,14 @@
     <option name="groupingKeys">
       <option value="directory" />
       <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Vue Single File Component" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -53,9 +58,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/temp0/package.json" />
-  </component>
   <component name="ProjectId" id="2Y7MQhofngEteAgQsU1QZLZla9a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -68,18 +70,51 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/IDEA/.IntelliJIdea/Picture-restoration",
+    "last_opened_file_path": "D:/IDEA/.IntelliJIdea/Picture-restoration/web_app/src/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\.IntelliJIdea\Picture-restoration\web_app\src\model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Uptest">
+    <configuration name="Uptest" type="PythonConfigurationType" factoryName="Python">
+      <module name="Picture-restoration" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Program Files (x86)\shuaimang\python.exe" />
+      <option name="SDK_NAME" value="Python 3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web_app/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web_app/src/Uptest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="serve" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/web_app/package.json" />
       <command value="run" />
@@ -90,6 +125,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.serve" />
+      <item itemvalue="Python.Uptest" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -109,7 +148,7 @@
       <workItem from="1700224603231" duration="39538000" />
       <workItem from="1701142304604" duration="764000" />
       <workItem from="1701143090570" duration="36000" />
-      <workItem from="1701173692452" duration="19684000" />
+      <workItem from="1701173692452" duration="49941000" />
     </task>
     <task id="LOCAL-00001" summary="web工程目录">
       <created>1699874166800</created>
@@ -153,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700729569832</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="页面修改逻辑整合">
+      <created>1701601589142</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701601589143</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,9 +234,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="web工程目录" />
     <MESSAGE value="初步页面设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="初步页面设计" />
+    <MESSAGE value="页面修改逻辑整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="页面修改逻辑整合" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Picture_restoration$Uptest.coverage" NAME="Uptest 覆盖结果" MODIFIED="1702027638519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web_app/src" />
   </component>
 </project>
