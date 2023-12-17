@@ -1,17 +1,14 @@
 <template>
-    <display/>
     <Title />
 
 </template>
 
 <script>
 import Title from './components/Title.vue';
-import Display from './components/display.vue'
 export default {
     name: 'App',
     components: {
         Title,
-        Display,
     },
 };
 </script>
