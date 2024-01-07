@@ -60,7 +60,10 @@
                                         <div class="grid-content bg-purple">
                                             <input id="file-input" type="file" @change="handleFileChange" style="display: none" accept="image/*" />
                                             <label for="file-input" class="image-preview">
-                                                <img :src="imagePreviewUrl" class="image-preview" />
+
+                                                <img v-if="imagePreviewUrl" :src="imagePreviewUrl" class="image-preview" />
+
+                                                <img v-else src="../assets/1.png" class="image-preview" />
                                             </label>
                                         </div>
                                         <button class="btn" @click="uploadImage">上传需修复的图片</button>
@@ -109,13 +112,18 @@ export default {
     },
     methods: {
         handleFileChange(event) {
-            this.selectedFile = event.target.files[0];
+            if(event.target.files.length>0){
+                this.selectedFile = event.target.files[0];
+            }else {
+                this.imagePreviewUrl=' ';
+            }
+
             this.previewImage();
 
         },
         uploadImage() {
             const formData = new FormData();
-            formData.append('image', this.selectedFile);
+            formData.append('file', this.selectedFile);
             axios
                 .post('http://127.0.0.1:5000/upload', formData,{responseType:'blob'})
                 .then((response) =>{
@@ -136,7 +144,6 @@ export default {
             reader.onload = (e) => {
                 this.imagePreviewUrl = e.target.result;
             };
-
             reader.readAsDataURL(this.selectedFile);
         },
     },
